@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<%= button_to 'Back', doctors_path, :method => :get  %>
+
+<p>
+  <img src="<%= @doctor.image %>">
+</p>
+<p>
+  <%= @doctor.name %>
+</p>
+
+<p>
+  <strong>Speciality:</strong>
+  <%= @doctor.speciality %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @doctor.gender %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @doctor.age %>
+</p>
+
+<%= button_to 'Book an Appointment',new_appointment_path, class: "btn btn-link read-more", :method => :get %>
+
+
